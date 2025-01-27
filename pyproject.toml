@@ -1,0 +1,18 @@
+[project]
+name = "work"
+version = "0.1.0"
+description = "Ice Cream Factory Bootcamp"
+authors = [
+    {name = "Jonluca"}
+]
+readme = "README.md"
+requires-python = "<4.0,>=3.10"
+dependencies = [
+    "cognite-sdk (>=7.73.1,<8.0.0)",
+    "cognite-extractor-utils (>=7.5.9,<8.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

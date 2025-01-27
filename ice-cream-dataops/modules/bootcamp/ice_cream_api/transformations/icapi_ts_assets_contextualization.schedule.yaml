@@ -1,0 +1,5 @@
+- name: Contextualize timeseries and assets every night
+  functionExternalId: tr-ts_asset_contextualization
+  externalId: tr-ts_asset_contextualization
+  cronExpression: "59 0 * * *"
+  interval: "59 0 * * *"

@@ -1,0 +1,5 @@
+- name: Frontfill asset hierarchy every night
+  functionExternalId: tr-create_asset_hierarchy
+  externalId: tr-create_asset_hierarchy
+  cronExpression: "59 0 * * *"
+  interval: "59 0 * * *"
