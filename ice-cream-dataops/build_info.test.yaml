@@ -87,19 +87,19 @@ modules:
       - identifier:
           name: gp_admin_readonly
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/data_foundation/auth/admin.readonly.group.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/data_foundation/auth/admin.readonly.group.yaml
           hash: 5aba03bd
         kind: Group
       - identifier:
           name: gp_admin_read_write
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/data_foundation/auth/admin.readwrite.group.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/data_foundation/auth/admin.readwrite.group.yaml
           hash: 5d76eb9d
         kind: Group
       - identifier:
           name: data_developer
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/data_foundation/auth/data_developer.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/data_foundation/auth/data_developer.yaml
           hash: 4bf4713a
         kind: Group
     warning_count: 0
@@ -190,97 +190,97 @@ modules:
       - identifier:
           externalId: ep_icapi_assets
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/extraction_pipelines/ep_icapi_assets.ExtractionPipeline.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/extraction_pipelines/ep_icapi_assets.ExtractionPipeline.yaml
           hash: 5f0dd030
         kind: ExtractionPipeline
       - identifier:
           externalId: ep_icapi_datapoints
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/extraction_pipelines/ep_icapi_datapoints.ExtractionPipeline.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/extraction_pipelines/ep_icapi_datapoints.ExtractionPipeline.yaml
           hash: e80c9614
         kind: ExtractionPipeline
       - identifier:
           externalId: ep_icapi_timeseries
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/extraction_pipelines/ep_icapi_timeseries.ExtractionPipeline.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/extraction_pipelines/ep_icapi_timeseries.ExtractionPipeline.yaml
           hash: 3e62518f
         kind: ExtractionPipeline
       transformations:
       - identifier:
           externalId: tr-create_asset_hierarchy
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_asset_hierarchy.schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_asset_hierarchy.schedule.yaml
           hash: 074f7456
         kind: Schedule
       - identifier:
           externalId: tr-create_asset_hierarchy
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_asset_hierarchy.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_asset_hierarchy.yaml
           hash: a0c2c64f
         kind: Transformation
         extra_sources:
-        - path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_asset_hierarchy.sql
+        - path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_asset_hierarchy.sql
           hash: f9e7ebde
       - identifier:
           externalId: tr-ts_asset_contextualization
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/icapi_ts_assets_contextualization.schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/icapi_ts_assets_contextualization.schedule.yaml
           hash: 5c6da84d
         kind: Schedule
       - identifier:
           externalId: tr-ts_asset_contextualization
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/icapi_ts_assets_contextualization.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/icapi_ts_assets_contextualization.yaml
           hash: 5cd70658
         kind: Transformation
         extra_sources:
-        - path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/icapi_ts_assets_contextualization.sql
+        - path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/icapi_ts_assets_contextualization.sql
           hash: bcf4d56b
       auth:
       - identifier:
           name: icapi_extractor
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/auth/icapi_extractors.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/auth/icapi_extractors.yaml
           hash: 5784d8dc
         kind: Group
       functions:
       - identifier:
           externalId: icapi_assets_extractor
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/functions.Function.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/functions.Function.yaml
           hash: 827f57be
         kind: Function
       - identifier:
           externalId: icapi_timeseries_extractor
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/functions.Function.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/functions.Function.yaml
           hash: 827f57be
         kind: Function
       - identifier:
           externalId: icapi_datapoints_extractor
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/functions.Function.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/functions.Function.yaml
           hash: 827f57be
         kind: Function
       - identifier:
           functionExternalId: icapi_datapoints_extractor
           name: Frontfill every 10 minutes for the last hour of data (streamer)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/schedules.Schedules.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/schedules.Schedules.yaml
           hash: e037f756
         kind: Schedule
       - identifier:
           functionExternalId: icapi_datapoints_extractor
           name: Backfill Oslo once a day for the last 5 days (gap filling)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/schedules.Schedules.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/schedules.Schedules.yaml
           hash: e037f756
         kind: Schedule
       data_sets:
       - identifier:
           externalId: ds_icapi
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/data_sets/data_sets.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/data_sets/data_sets.yaml
           hash: ff4abd91
         kind: DataSet
       raw:
@@ -288,26 +288,26 @@ modules:
           dbName: ice_cream_api
           tableName: icapi_assets_extractor
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/ice_cream_api.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/ice_cream_api.yaml
           hash: 541f401b
         kind: Table
       - identifier:
           dbName: ice_cream_api
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/ice_cream_api.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/ice_cream_api.yaml
           hash: de6a354d
         kind: Database
       - identifier:
           dbName: state_store
           tableName: icapi_datapoints_extractor
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/state_store.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/state_store.yaml
           hash: ecdc76ac
         kind: Table
       - identifier:
           dbName: state_store
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/state_store.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/state_store.yaml
           hash: cadb3651
         kind: Database
     warning_count: 6
@@ -402,91 +402,91 @@ modules:
       - identifier:
           name: data_pipeline_oee
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/auth/data_pipeline_oee.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/auth/data_pipeline_oee.yaml
           hash: 702f1425
         kind: Group
       functions:
       - identifier:
           externalId: oee_timeseries
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/functions.Function.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/functions.Function.yaml
           hash: 3579da40
         kind: Function
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations every 10 minutes for last hour of data
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (Oslo)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (Nuremberg)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (Marseille)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (Houston)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (Sao Paulo)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (Kuala Lumpur)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (Chicago)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (Rotterdam)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       - identifier:
           functionExternalId: oee_timeseries
           name: Run calculations once a day for 30 days history (London)
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
           hash: 74530d91
         kind: Schedule
       data_sets:
       - identifier:
           externalId: ds_icapi
         source:
-          path: /Users/jonluca.biagini@cognitedata.com/work/Bootcamp/ice-cream-dataops/modules/bootcamp/use_cases/oee/data_sets/data_sets.yaml
+          path: /Users/jonluca.biagini@cognitedata.com/work/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/data_sets/data_sets.yaml
           hash: 918ef4af
         kind: DataSet
     warning_count: 1

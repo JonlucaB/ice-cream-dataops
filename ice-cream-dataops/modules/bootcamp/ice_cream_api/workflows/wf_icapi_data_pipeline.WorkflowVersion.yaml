@@ -8,6 +8,7 @@ workflowDefinition:
       parameters:
         function:
           externalId: 'icapi_assets_extractor'
+          data: {}
         isAsyncComplete: false
       description: Extracting assets from icapi
       name: 'Asset Extractor'
@@ -33,7 +34,7 @@ workflowDefinition:
       parameters:
         function:
           externalId: 'icapi_timeseries_extractor'
-          concurrencyPolicy: fail
+          data: {}
       description: Extracting timeseries from icapi
       name: 'Timeseries Extractor'
       retries: 3
@@ -44,7 +45,7 @@ workflowDefinition:
       parameters:
         function:
           externalId: 'icapi_datapoints_extractor'
-          concurrencyPolicy: fail
+          data: {}
       description: Extracting datapoints from icapi
       name: 'Extract Datapoints'
       retries: 3
@@ -71,7 +72,7 @@ workflowDefinition:
       parameters:
         function:
           externalId: 'oee_timeseries'
-          concurrencyPolicy: fail
+          data: {}
       description: Generating OEE for assets using timeseries in icapi
       retries: 3
       timeout: 3600
