@@ -1,0 +1,81 @@
+workflowExternalId: wf_icapi_data_pipeline
+version: '1'
+workflowDefinition:
+  description: 'Run ice cream in sequence'
+  tasks:
+    - externalId: 'wf_icapi_asset_extractor_function_task'
+      type: 'function'
+      parameters:
+        function:
+          externalId: 'icapi_assets_extractor'
+        isAsyncComplete: false
+      description: Extracting assets from icapi
+      name: 'Asset Extractor'
+      retries: 3
+      timeout: 3600
+      onFailure: 'abortWorkflow'
+    - externalId: 'wf_icapi_create_asset_hierarchy_task'
+      type: 'transformation'
+      parameters:
+        transformation:
+          externalId: 'tr-create_asset_hierarchy'
+          concurrencyPolicy: fail
+      description: Creating the asset hierarchy
+      name: 'Create Asset Hierarchy'
+      retries: 3
+      timeout: 3600
+      onFailure: 'abortWorkflow'
+      dependsOn:
+        - externalId: 'wf_icapi_asset_extractor_function_task'
+      # Timeseries does not depend on anyone or anything
+    - externalId: 'wf_icapi_timeseries_extractor_function_task'
+      type: 'function'
+      parameters:
+        function:
+          externalId: 'icapi_timeseries_extractor'
+          concurrencyPolicy: fail
+      description: Extracting timeseries from icapi
+      name: 'Timeseries Extractor'
+      retries: 3
+      timeout: 3600
+      onFailure: 'abortWorkflow'
+    - externalId: 'wf_icapi_datapoints_extractor_function_task'
+      type: 'function'
+      parameters:
+        function:
+          externalId: 'icapi_datapoints_extractor'
+          concurrencyPolicy: fail
+      description: Extracting datapoints from icapi
+      name: 'Extract Datapoints'
+      retries: 3
+      timeout: 3600
+      onFailure: 'abortWorkflow'
+      dependsOn:
+        - externalId: 'wf_icapi_timeseries_extractor_function_task'
+    - externalId: 'wf_icapi_ts_assets_contextualization_task'
+      type: 'transformation'
+      parameters:
+        transformation:
+          externalId: 'tr-ts_asset_contextualization'
+          concurrencyPolicy: fail
+      description: Contextualizing timeseries and assets
+      name: 'Timeseries and Asset Contextualization'
+      retries: 3
+      timeout: 3600
+      onFailure: 'abortWorkflow'
+      dependsOn:
+        - externalId: 'wf_icapi_timeseries_extractor_function_task'
+        - externalId: 'wf_icapi_create_asset_hierarchy_task'
+    - externalId: 'wf_icapi_oee_timeseries_task'
+      type: 'function'
+      parameters:
+        function:
+          externalId: 'oee_timeseries'
+          concurrencyPolicy: fail
+      description: Generating OEE for assets using timeseries in icapi
+      retries: 3
+      timeout: 3600
+      onFailure: 'abortWorkflow'
+      dependsOn:
+        - externalId: 'wf_icapi_datapoints_extractor_function_task'
+        - externalId: 'wf_icapi_ts_assets_contextualization_task'
